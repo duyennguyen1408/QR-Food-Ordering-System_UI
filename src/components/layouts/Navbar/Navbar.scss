@@ -1,0 +1,33 @@
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.nav-menu {
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    animation: fadeInLeft 1s ease-in-out forwards;
+    .nav-container {
+        margin: 20px;
+
+        img {
+            width: auto;
+            height: 40px;
+        }
+    }
+}
+@media (min-width: 600px) {
+    .nav-menu .nav-container {
+        margin: 35px;
+        img {
+            width: auto;
+            height: 60px;
+        }
+    }
+}
