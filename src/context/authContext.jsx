@@ -47,6 +47,7 @@ export const AuthContextProvider = ({ children }) => {
         sessionStorage.setItem("user", JSON.stringify(currentUser));
         if (currentUser) {
             dispatch(setToken(currentUser.data.token));
+            console.log(currentUser.data.token);
         }
     }, [currentUser, dispatch]);
 
